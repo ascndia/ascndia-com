@@ -16,7 +16,8 @@ import {
   BsLinkedin as LinkedinIcon,
   BsTiktok as TiktokIcon,
   BsTwitter as TwitterIcon,
-  BsYoutube as YoutubeIcon
+  BsYoutube as YoutubeIcon,
+  BsStack as SkillIcon
 } from 'react-icons/bs';
 import { LuWorkflow } from 'react-icons/lu';
 
@@ -42,10 +43,18 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Projects'
   },
   {
+    title: 'Skill',
+    href: '/skill',
+    icon: <SkillIcon/>,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Skill'
+  },
+  {
     title: 'Blog',
     href: '/blog',
     icon: <BlogIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Blog'
   },
@@ -53,7 +62,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     title: 'Learn',
     href: '/learn',
     icon: <LearnIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Learn'
   },
@@ -94,7 +103,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
 export const SOCIAL_MEDIA: MenuItemProps[] = [
   {
     title: 'Github',
-    href: 'https://github.com/Bayusetiawan45',
+    href: ' https://github.com/ascndia',
     icon: <GithubIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -102,7 +111,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Linkedin',
-    href: 'https://www.linkedin.com/in/bayu-setiawan99/',
+    href: 'https://www.linkedin.com/in/abdurrahman-izzuddin-al-faruq-91079a1b7/',
     icon: <LinkedinIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -112,13 +121,13 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     title: 'Twitter',
     href: 'https://twitter.com/',
     icon: <TwitterIcon size={iconSize} />,
-    isShow: false,
+    isShow: true,
     isExternal: true,
     eventName: 'Social: Twitter'
   },
   {
     title: 'Instagram',
-    href: 'https://instagram.com/bayustr__',
+    href: 'https://www.instagram.com/ascndia/',
     icon: <InstagramIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -136,7 +145,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     title: 'Discord',
     href: 'https://discord.gg/76UFeGdXy6',
     icon: <DiscordIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: true,
     eventName: 'Social: Discord'
   },
@@ -144,13 +153,13 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     title: 'Youtube',
     href: 'https://www.youtube.com/@codebayu',
     icon: <YoutubeIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: true,
     eventName: 'Social: Youtube'
   },
   {
     title: 'TikTok',
-    href: 'https://www.tiktok.com/@codebayu.com',
+    href: 'https://www.tiktok.com/@djpresetonly',
     icon: <TiktokIcon size={iconSize} />,
     isShow: true,
     isExternal: true,

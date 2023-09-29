@@ -1,7 +1,7 @@
 export const METADATA = {
-  creator: 'Bayu Setiawan',
+  creator: 'Abdurrahman izzuddin',
   description: 'Personal website, portfolio, blog, software engineer roadmap, programming tips of Code Bayu',
-  keyword: 'codebayu, bayu setiawan, programming tips, belajar javascript, belajar typescript',
+  keyword: 'ascndia, @ascndia, abdurrahman izzuddin, abdurrahman izzuddin al faruq, aia faruq, faruq',
   authors: {
     name: 'Bayu Setiawan',
     url: process.env.DOMAIN
@@ -12,5 +12,5 @@ export const METADATA = {
     locale: 'id-ID'
   },
   exTitle: '| Code Bayu',
-  profile: 'https://res.cloudinary.com/dvlbwm8c1/image/upload/v1693008885/codebayu/ab0kfkhjgymzthooxiea.webp'
+  profile: '/pp.jpeg'
 };

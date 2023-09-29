@@ -4,10 +4,11 @@ import clsx from 'clsx';
 import React from 'react';
 import { MdVerified as VerifiedIcon } from 'react-icons/md';
 
-import { DEVTO_PROFILE, PROFILE_URL } from '@/common/constant';
+import { IG_PROFILE, PROFILE_URL } from '@/common/constant';
 
 import Image from '../../elements/Image';
 import Tooltip from '../../elements/Tooltip';
+import useIsMobile from '@/hooks/useIsMobile';
 
 interface ProfileHeaderProps {
   expandMenu: boolean;
@@ -15,6 +16,7 @@ interface ProfileHeaderProps {
 }
 
 export default function ProfileHeader({ expandMenu, imageSize }: ProfileHeaderProps) {
+  const isMobile = useIsMobile()
   return (
     <div
       className={clsx(
@@ -32,18 +34,18 @@ export default function ProfileHeader({ expandMenu, imageSize }: ProfileHeaderPr
       />
       <div className="flex gap-2 items-center mt-1 lg:mt-4">
         <Link href="/" passHref>
-          <h2 className="flex-grow text-lg lg:text-xl font-sora font-medium">Bayu Setiawan</h2>
+          <h2 className="flex-grow text-lg lg:text-xl font-sora font-medium">{isMobile ? 'Ascndia' : 'Abdurrahman Izzuddin'}</h2>
         </Link>
         <Tooltip title="Verified">
           <VerifiedIcon size={18} className="text-blue-400" />
         </Tooltip>
       </div>
       <Link
-        href={DEVTO_PROFILE}
+        href={IG_PROFILE}
         target="_blank"
         className="hidden lg:flex text-sm font-sora text-neutral-600 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 transition-all duration-300"
       >
-        @codebayu
+        @ascndia
       </Link>
     </div>
   );
