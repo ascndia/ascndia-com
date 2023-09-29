@@ -1,4 +1,4 @@
-# v2.codebayu.com
+<!-- # v2.codebayu.com
 
 Welcome to the **Personal Website, Blogs, and Programming Tips** open-source repository! This project is built using Next.js, Tailwind CSS, Prisma, and PostgreSQL, and it's designed to help you create your own personal website, share insightful blogs, and offer programming tips to the community. You find this project a bit helpful? Then give me the start
 
@@ -55,4 +55,4 @@ Contributions to this project are welcome and encouraged! If you find any bugs, 
 
 ## Reference
 [aulianza](https://github.com/aulianza/aulianza.id)
-
+ -->
