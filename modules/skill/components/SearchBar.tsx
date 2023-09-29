@@ -16,7 +16,7 @@ function SearchBar() {
     return (
         <div className='gap-2 flex flex-col lg:flex-row lg:items-center items-start'>
             <h2 className='text-xl w-fit lg:text-lg'>Explore : </h2>
-            <input className='rounded-md flex items-center w-full lg:w-auto h-8 lg:h-7 px-2 py-1 lg:py-0.5 lg:text-base' onChange={handleType}></input>
+            <input className='rounded-md border flex items-center w-full lg:w-auto h-8 lg:h-7 px-2 py-1 lg:py-0.5 lg:text-base' onChange={handleType}></input>
         </div>
     )
 }
