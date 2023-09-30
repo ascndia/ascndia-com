@@ -18,7 +18,7 @@ function SkillList() {
   },[filterObj])
 
   return (
-    <div className='flex flex-wrap gap-6 pt-3 justify-between'>
+    <div className='flex flex-wrap gap-6 pt-3 '>
       {
         filteredSkills.map((skill,index) => (
           <SkillCard key={index} {...skill}/>
