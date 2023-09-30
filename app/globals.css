@@ -16,3 +16,7 @@
     }
   }
 }
+
+.tooltip:nth-child(12n) > .tooltip-child, .tooltip:nth-child(12n-1) > .tooltip-child, .tooltip:nth-child(12n-2) > .tooltip-child {
+  left: -216px;
+}
