@@ -1,11 +1,6 @@
-import Link from 'next/link';
-
 import { AiOutlineCompass as CompassIcon } from 'react-icons/ai';
-import { LuDownload as DownloadIcon } from 'react-icons/lu';
-
 import SectionHeading from '@/common/components/elements/SectionHeading';
-import SectionSubHeading from '@/common/components/elements/SectionSubHeading';
-import { NAVIGATE_ITEM } from '@/common/constant/careers';
+import { NAVIGATE_ITEM } from '@/common/constant/navigate';
 const SHOW_NAVIGATE_ITEM = NAVIGATE_ITEM.filter(item => item.isShow)
 import NavCard from './NavCard';
 

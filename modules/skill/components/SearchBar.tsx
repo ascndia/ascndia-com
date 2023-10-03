@@ -1,4 +1,4 @@
-import { typeHandler as typeHandlerAction } from '@/context/skills/filter'
+import { typeHandler as typeHandlerAction } from '@/context/filter/filter'
 
 import React from 'react'
 import { useDispatch } from 'react-redux'

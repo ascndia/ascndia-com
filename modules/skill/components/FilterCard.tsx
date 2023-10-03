@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { filterType } from '../constant/filter'
+import { filterType } from '@/common/types/filter' 
 import { useDispatch, useSelector } from 'react-redux'
-import { categoryHandler } from '@/context/skills/filter'
-import { RootState } from '@/context/skills/store'
+import { categoryHandler } from '@/context/filter/filter'
+import { RootState } from '@/context/filter/store'
 
 function FilterCard({ title, category }:filterType) {
     const [isActive,setIsActive] = useState(false)

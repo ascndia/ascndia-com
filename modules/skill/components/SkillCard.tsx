@@ -1,4 +1,4 @@
-import { SKILL_INTERFACE } from '@/common/constant/skill'
+import { SKILL_INTERFACE } from '@/common/types/skill'
 import Image from 'next/image'
 import React from 'react'
 import Tooltip from './Tooltip'

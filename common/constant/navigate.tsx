@@ -10,10 +10,14 @@ import {
 } from 'react-icons/bi';
 
 import {
-  BsStack as SkillIcon
-} from 'react-icons/bs'
+  FiInbox as SkillIcon
+} from 'react-icons/fi'
 
-import { LuWorkflow as RoadmapIcon } from 'react-icons/lu';
+import 
+{ 
+  LuWorkflow as RoadmapIcon,
+  LuHeartHandshake as ServiceIcon 
+} from 'react-icons/lu';
 
 const iconSize = 30
 
@@ -28,6 +32,12 @@ export const NAVIGATE_ITEM = [
     title:'About',
     href:'/about',
     icon: <ProfileIcon size={iconSize}/>,
+    isShow:true
+  },
+  {
+    title:"Service",
+    href:'/service',
+    icon: <ServiceIcon size={iconSize}/>,
     isShow:true
   },
   {

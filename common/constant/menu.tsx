@@ -17,9 +17,13 @@ import {
   BsTiktok as TiktokIcon,
   BsTwitter as TwitterIcon,
   BsYoutube as YoutubeIcon,
-  BsStack as SkillIcon
 } from 'react-icons/bs';
-import { LuWorkflow } from 'react-icons/lu';
+import {
+  FiInbox as SkillIcon
+} from 'react-icons/fi'
+import 
+{ LuWorkflow,
+  LuHeartHandshake as ServiceIcon } from 'react-icons/lu';
 
 import { MenuItemProps } from '../types/menu';
 
@@ -42,6 +46,14 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isExternal: false,
     eventName: 'Pages: Projects'
   },
+  {
+    title: 'Services',
+    href: '/service',
+    icon: <ServiceIcon size={iconSize}/>,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Services'
+  }, 
   {
     title: 'Skill',
     href: '/skill',
@@ -86,7 +98,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     title: 'Roadmap',
     href: '/roadmap?tribe=frontend-developer',
     icon: <LuWorkflow size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Roadmap'
   },

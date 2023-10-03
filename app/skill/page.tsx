@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { METADATA } from '@/common/constant/metadata';
 
 import Skills from '@/modules/skill';
-import skillStore from '@/context/skills/store';
+import skillStore from '@/context/filter/store';
 import Container from '@/common/components/elements/Container';
 
 export const metadata: Metadata = {

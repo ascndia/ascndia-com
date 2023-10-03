@@ -1,4 +1,4 @@
-import { skillCategory } from '@/common/constant/skill';
+import { skillCategory } from '@/common/types/skill'; 
 import { removeIfExist } from '@/common/helpers/removeIfExist';
 import { createSlice, } from '@reduxjs/toolkit';
 

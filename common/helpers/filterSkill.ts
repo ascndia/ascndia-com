@@ -1,5 +1,5 @@
-import { initialFilterState } from "@/context/skills/filter"
-import { SKILL_INTERFACE } from "../constant/skill"
+import { initialFilterState } from "@/context/filter/filter"
+import { SKILL_INTERFACE } from "../types/skill"; 
 import { haveCommonValue } from "./haveCommonValue";
 
 const filterSkill = (skills:SKILL_INTERFACE[],filterObj:initialFilterState):SKILL_INTERFACE[] => {

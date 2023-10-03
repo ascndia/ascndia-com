@@ -1,5 +1,5 @@
 import React from 'react';
-import { SKILL_INTERFACE } from '@/common/constant/skill';
+import { SKILL_INTERFACE } from '@/common/types/skill';
 import Tooltip from '@/common/components/elements/Tooltip';
 import Image from 'next/image';
 

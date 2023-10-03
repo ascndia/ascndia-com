@@ -5,7 +5,7 @@ import SkillHeader from './SkillHeader'
 import Breakline from '@/common/components/elements/Breakline'
 import SkillList from './SkillList'
 import { Provider } from 'react-redux'
-import skillStore from '@/context/skills/store'
+import skillStore from '@/context/filter/store'
 
 function Skills() {
   return (

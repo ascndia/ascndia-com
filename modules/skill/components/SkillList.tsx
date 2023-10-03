@@ -1,12 +1,11 @@
 'use client'
 
-import { RootState } from '@/context/skills/store'
+import { RootState } from '@/context/filter/store'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { SKILLS, SKILL_INTERFACE } from '@/common/constant/skill'
+import { SKILLS } from '@/common/constant/skill'
 import filterSkill from '@/common/helpers/filterSkill'
 import SkillCard from './SkillCard'
-
 
 function SkillList() {
   

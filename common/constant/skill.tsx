@@ -1,17 +1,4 @@
-export type skillCategory = 'fe'|'be'|'lang'|'tool'|'misc'|'fs'|'lib'|'fw'|'db'|'sv'
-export type mastery = 'Expert'|'Good'|'Average'|'Minimum'
-export type usage = 'Primary'|'Secondary'|'Hobby'|'Rarely'|'Sometimes'
-
-export interface SKILL_INTERFACE {
-    title:string,
-    icon:string,
-    info:string
-    category:skillCategory[]
-    mastery:mastery
-    usage:usage
-    isShow:boolean,
-    isShowInDashboard:boolean
-}
+import { SKILL_INTERFACE } from "../types/skill"
 
 export const SKILLS:SKILL_INTERFACE[] = [
     {
@@ -55,7 +42,17 @@ export const SKILLS:SKILL_INTERFACE[] = [
         isShowInDashboard:true
     },
     {
-        title:'React.js',
+        title:'Python',
+        icon:'/python.svg', 
+        info:`Python is a high-level, versatile programming language known for its simplicity and readability. It's widely used in web development, scientific computing, data analysis, artificial intelligence, and more.`,
+        category:['lang'],
+        mastery:'Average',
+        usage:'Rarely',
+        isShow:true,
+        isShowInDashboard:true
+    },
+    {
+        title:'React',
         icon:'/react.svg',
         info:`ReactJS is a JavaScript library for building user interfaces, known for its component-based approach, reusability, and efficient rendering of UI elements.`,
         category:['lib','fe'],
@@ -82,23 +79,13 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Sometimes',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'MaterialUI',
         icon:'/materialui.svg', 
         info:`Material-UI is a popular open-source React UI framework based on Google's Material Design. It provides a set of pre-built, customizable components for building modern, responsive web applications with a sleek and consistent design.`,
         category:['fe'],
-        mastery:'Average',
-        usage:'Rarely',
-        isShow:true,
-        isShowInDashboard:true
-    },
-    {
-        title:'Python',
-        icon:'/python.svg', 
-        info:`Python is a high-level, versatile programming language known for its simplicity and readability. It's widely used in web development, scientific computing, data analysis, artificial intelligence, and more.`,
-        category:['lang'],
         mastery:'Average',
         usage:'Rarely',
         isShow:true,
@@ -142,7 +129,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Rarely',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'Graphql',
@@ -152,7 +139,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Rarely',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'Next.js',
@@ -165,6 +152,16 @@ export const SKILLS:SKILL_INTERFACE[] = [
         isShowInDashboard:true
     },
     {
+        title:'Prisma',
+        icon:'/prisma.svg', 
+        info:'Modern database toolkit for type-safe queries, migrations, and schema management in multiple programming languages.',
+        category:['be','misc','lib'],
+        mastery:'Good',
+        usage:'Sometimes',
+        isShow:true,
+        isShowInDashboard:true
+    },
+    {
         title:'Express',
         icon:'/express.svg', 
         info:`Express.js is a popular open-source web application framework for Node.js. It simplifies the creation of robust and scalable web applications and APIs.`,
@@ -172,7 +169,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Good',
         usage:'Primary',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'Postgre',
@@ -182,7 +179,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Rarely',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'MySQL',
@@ -192,7 +189,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Sometimes',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'Mongodb',
@@ -215,6 +212,16 @@ export const SKILLS:SKILL_INTERFACE[] = [
         isShowInDashboard:true
     },
     {
+        title:'Git',
+        icon:'/git.svg', 
+        info:' Version control system. Tracks changes, facilitates collaboration. Repositories store code. Branching isolates work. Merging combines changes',
+        category:['tool'],
+        mastery:'Good',
+        usage:'Primary',
+        isShow:true,
+        isShowInDashboard:true
+    },
+    {
         title:'Postman',
         icon:'/postman.svg', 
         info:`Postman is a popular collaboration platform for API development. It allows users to design, test, and document APIs, making the development process more efficient and streamlined.`,
@@ -222,7 +229,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Secondary',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'SocketIO',
@@ -232,7 +239,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Sometimes',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'PHP',
@@ -252,7 +259,17 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Rarely',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
+    },
+    {
+        title:'Jquery',
+        icon:'/jquery.svg', 
+        info:`Lightweight JavaScript library simplifying DOM manipulation, event handling, animations, AJAX, making web development more efficient and cross-browser compatible.        `,
+        category:['misc'],
+        mastery:'Average',
+        usage:'Rarely',
+        isShow:true,
+        isShowInDashboard:false
     },
     {
         title:'Flask',
@@ -262,7 +279,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Good',
         usage:'Rarely',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'Redis',
@@ -282,7 +299,7 @@ export const SKILLS:SKILL_INTERFACE[] = [
         mastery:'Average',
         usage:'Rarely',
         isShow:true,
-        isShowInDashboard:true
+        isShowInDashboard:false
     },
     {
         title:'Pandas',

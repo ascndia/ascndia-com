@@ -1,4 +1,4 @@
-import { skillCategory } from "../constant/skill";
+import { skillCategory } from "../types/skill"
 
 export default function categoryToTitle(string:skillCategory){
     switch(string){

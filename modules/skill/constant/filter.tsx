@@ -1,9 +1,4 @@
-import { skillCategory } from "@/common/constant/skill"
-
-export type filterType = {
-    title:string,
-    category: skillCategory
-}
+import { filterType } from "@/common/types/filter"
 
 const filters:filterType[] = [    
     {

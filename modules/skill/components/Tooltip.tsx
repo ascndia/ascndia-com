@@ -1,6 +1,6 @@
 'use client';
 
-import { SKILL_INTERFACE, mastery, skillCategory, usage } from '@/common/constant/skill';
+import { SKILL_INTERFACE, mastery, skillCategory, usage } from '@/common/types/skill';
 import { motion } from 'framer-motion';
 import { ReactNode, useState } from 'react';
 import Breakline from './Breakline';
