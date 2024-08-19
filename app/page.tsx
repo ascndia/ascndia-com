@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 
-import { JSONDataService } from '@/services/data/JSONDataService';
-
 import Container from '@/common/components/elements/Container';
 import { METADATA } from '@/common/constant/metadata';
 
