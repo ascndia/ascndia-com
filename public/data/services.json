@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Web Development",
+    "description": "Delivering high quality websites and web apps",
+    "icon": "/service/website.svg",
+    "slug": "web-development",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "isShow": true
+  },
+  {
+    "title": "Mobile App Development",
+    "description": "Delivering production grade mobile application",
+    "slug": "mobile-development",
+    "icon": "/service/smartphone.svg",
+    "image": "https://images.unsplash.com/photo-1644794472051-36d154dfe487?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "isShow": true
+  },
+  {
+    "title": "Figma Design",
+    "description": "Delivering high quality figma designs and mockups",
+    "slug": "figma",
+    "icon": "/service/figma.svg",
+    "image": "https://images.unsplash.com/photo-1658204212985-e0126040f88f?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "isShow": true
+  },
+  {
+    "title": "Schoolwork & Collegework",
+    "description": "Solve and deliver any schoolwork with confident",
+    "slug": "school-work",
+    "icon": "/service/schoolwork.svg",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
+    "isShow": true
+  },
+  {
+    "title": "Graphic Design",
+    "description": "I will design any type of design with confidence",
+    "slug": "graphic-design",
+    "icon": "/service/design.svg",
+    "image": "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "isShow": true
+  },
+  {
+    "title": "Consulting and Strategy",
+    "description": "Providing expert advice and strategic planning in the digital landscape effectively",
+    "slug": "consult-and-strategy",
+    "icon": "/web.svg",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "isShow": false
+  },
+  {
+    "title": "Freelancer and Outsourcing",
+    "description": "Takes and complete given task confidently",
+    "slug": "freelance-and-outsourcing",
+    "icon": "/web.svg",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "isShow": false
+  }
+]

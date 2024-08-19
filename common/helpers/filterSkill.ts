@@ -1,29 +1,30 @@
-import { initialFilterState } from "@/context/filter/filter"
-import { SKILL_INTERFACE } from "../types/skill"; 
-import { haveCommonValue } from "./haveCommonValue";
+import { ISkill } from '@/services/data/types';
 
-const filterSkill = (skills:SKILL_INTERFACE[],filterObj:initialFilterState):SKILL_INTERFACE[] => {
+import { initialFilterState } from '@/context/filter/filter';
 
-    const { category, keyword } = filterObj;
+import { haveCommonValue } from './haveCommonValue';
 
-    const newList:SKILL_INTERFACE[] = [];
+const filterSkill = (skills: ISkill[], filterObj: initialFilterState): ISkill[] => {
+  const { category, keyword } = filterObj;
 
-    if((category.length === 0) && !keyword){
-        return skills
-    } else if (category.length === 0 && keyword){
-        skills.forEach((skill,index) => {
-            if(skill.title.toLowerCase().includes(keyword.toLowerCase())){
-                newList.push(skill)
-            }
-        })
-    } else {
-        skills.forEach((skill,index) => {
-            if(skill.title.toLowerCase().includes(keyword.toLowerCase()) && haveCommonValue(skill.category,category)){
-                newList.push(skill)
-            }
-        })
-    }
-    return newList
-}
+  const newList: ISkill[] = [];
 
-export default filterSkill
+  if (category.length === 0 && !keyword) {
+    return skills;
+  } else if (category.length === 0 && keyword) {
+    skills.forEach((skill, index) => {
+      if (skill.title.toLowerCase().includes(keyword.toLowerCase())) {
+        newList.push(skill);
+      }
+    });
+  } else {
+    skills.forEach((skill, index) => {
+      if (skill.title.toLowerCase().includes(keyword.toLowerCase()) && haveCommonValue(skill.category, category)) {
+        newList.push(skill);
+      }
+    });
+  }
+  return newList;
+};
+
+export default filterSkill;

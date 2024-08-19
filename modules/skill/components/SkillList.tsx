@@ -1,30 +1,38 @@
-'use client'
+'use client';
 
-import { RootState } from '@/context/filter/store'
-import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
-import { SKILLS } from '@/common/constant/skill'
-import filterSkill from '@/common/helpers/filterSkill'
-import SkillCard from './SkillCard'
+import { getSkills } from '@/fetch/data';
+import { ISkill } from '@/services/data/types';
+import { useQuery } from '@tanstack/react-query';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+
+import filterSkill from '@/common/helpers/filterSkill';
+
+import { RootState } from '@/context/filter/store';
+
+import SkillCard from './SkillCard';
 
 function SkillList() {
-  
-  const filterObj = useSelector((state:RootState) => state.filter)
-  const [filteredSkills,setFilteredSkills] = useState(SKILLS.filter(skill => skill.isShow))
-
+  const filterObj = useSelector((state: RootState) => state.filter);
+  const { data } = useQuery({
+    queryKey: ['skills'],
+    queryFn: getSkills
+  });
+  const [filteredSkills, setFilteredSkills] = useState<ISkill[]>(
+    data?.filter((skill: ISkill) => skill.isShow) as ISkill[]
+  );
   useEffect(() => {
-    setFilteredSkills(filterSkill(SKILLS,filterObj));
-  },[filterObj])
+    setFilteredSkills(data?.filter((skill: ISkill) => skill.isShow) as ISkill[]);
+  }, [data]);
+  useEffect(() => {
+    setFilteredSkills(filterSkill(data as ISkill[], filterObj));
+  }, [filterObj]);
 
   return (
-    <div className='grid grid-cols-5 lg:grid-cols-12 gap-6 pt-3'>
-      {
-        filteredSkills.map((skill,index) => (
-          <SkillCard key={index} {...skill}/>
-        ))
-      }
+    <div className="grid grid-cols-5 lg:grid-cols-12 gap-6 pt-3">
+      {filteredSkills?.map((skill, index) => <SkillCard key={index} {...skill} />)}
     </div>
-  )
+  );
 }
 
-export default SkillList
+export default SkillList;

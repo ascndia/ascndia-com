@@ -1,19 +1,22 @@
 'use client';
 
-import { SKILL_INTERFACE, mastery, skillCategory, usage } from '@/common/types/skill';
-import { motion } from 'framer-motion';
-import { ReactNode, useState } from 'react';
-import Breakline from './Breakline';
-import categoryToTitle from '@/common/helpers/categoryToTitle';
 import Image from 'next/image';
 
+import { motion } from 'framer-motion';
+import { ReactNode, useState } from 'react';
+
+import categoryToTitle from '@/common/helpers/categoryToTitle';
+import { SKILL_INTERFACE, mastery, skillCategory, usage } from '@/common/types/skill';
+
+import Breakline from './Breakline';
+
 interface TooltipProps {
-  title:string,
-  info:string
-  icon:string,
-  category:skillCategory[],
-  usage: usage,
-  mastery:mastery
+  title: string;
+  info: string;
+  icon: string;
+  category: string[];
+  usage: usage;
+  mastery: mastery;
   children: ReactNode;
 }
 
@@ -45,23 +48,22 @@ const Tooltip = ({ title, info, icon, category, mastery, usage, children }: Tool
           initial="hidden"
           animate="visible"
         >
-            <div className='w-fit z-30 left-11'>
-                <div className='flex justify-between gap-4 items-center'>
-                    <h2 className='text-xl'>{title}</h2>
-                    <Image src={icon} width={20} height={20} alt={title}/>
-                </div>
-                <Breakline/>
-                <div className='flex flex-wrap gap-1 items-center justify-start max-w-[240px]'>
-                    {
-                        category.map((cat,index) => (
-                            <p className='px-[5px] py-[2px] text-center rounded-sm bg-neutral-200 dark:bg-neutral-400 text-neutral-500 dark:text-neutral-700'>{categoryToTitle(cat)}</p>
-                        ))
-                    }
-                </div>
-                <Breakline/>
-                <p className='text-justify max-w-[240px]'>{info}</p>
+          <div className="w-fit z-30 left-11">
+            <div className="flex justify-between gap-4 items-center">
+              <h2 className="text-xl">{title}</h2>
+              <Image src={icon} width={20} height={20} alt={title} />
             </div>
-          
+            <Breakline />
+            <div className="flex flex-wrap gap-1 items-center justify-start max-w-[240px]">
+              {category.map((cat, index) => (
+                <p className="px-[5px] py-[2px] text-center rounded-sm bg-neutral-200 dark:bg-neutral-400 text-neutral-500 dark:text-neutral-700">
+                  {categoryToTitle(cat)}
+                </p>
+              ))}
+            </div>
+            <Breakline />
+            <p className="text-justify max-w-[240px]">{info}</p>
+          </div>
         </motion.div>
       )}
     </div>

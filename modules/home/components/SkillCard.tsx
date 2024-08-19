@@ -1,14 +1,15 @@
-import React from 'react';
-import { SKILL_INTERFACE } from '@/common/types/skill';
-import Tooltip from '@/common/components/elements/Tooltip';
 import Image from 'next/image';
 
+import { ISkill } from '@/services/data/types';
+import React from 'react';
 
-export default function SkillCard({ title, info, icon }: SKILL_INTERFACE) {
+import Tooltip from '@/common/components/elements/Tooltip';
+
+export default function SkillCard({ title, info, icon }: ISkill) {
   return (
     <div className="w-8 h-8 flex justify-center items-center">
       <Tooltip title={title}>
-        <Image alt={title} height={32} width={32} src={icon}/>
+        <Image alt={title} height={32} width={32} src={icon} />
       </Tooltip>
     </div>
   );

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Website Redesign",
+    "description": "A complete redesign of a corporate website to enhance user experience and improve SEO.",
+    "slug": "website-redesign",
+    "images": ["/projects/gallery/hg-1.png", "/projects/gallery/hg-1.png"],
+    "category": ["Web Development", "UI/UX Design"],
+    "stack": [
+      { "src": "/projects/icons/html.svg", "title": "HTML", "type": ["fe"] },
+      { "src": "/projects/icons/css.svg", "title": "CSS", "type": ["fe"] },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript", "type": ["fe"] },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++", "type": ["fe"] }
+    ],
+    "isFeatured": true,
+    "isShow": true,
+    "isShowInDashbard": true
+  },
+  {
+    "title": "E-commerce Platform",
+    "description": "Development of a full-fledged e-commerce platform with payment gateway integration.",
+    "slug": "ecommerce-platform",
+    "images": ["/projects/gallery/hg-1.png", "/projects/gallery/hg-1.png"],
+    "category": ["Web Development", "Backend Development"],
+    "stack": [
+      { "src": "/projects/icons/html.svg", "title": "HTML", "type": ["fe"] },
+      { "src": "/projects/icons/css.svg", "title": "CSS", "type": ["fe"] },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript", "type": ["fe"] },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++", "type": ["fe"] }
+    ],
+    "isFeatured": true,
+    "isShow": true,
+    "isShowInDashbard": false
+  },
+  {
+    "title": "Mobile App Development",
+    "description": "Creation of a cross-platform mobile app for managing tasks and productivity.",
+    "slug": "mobile-app-development",
+    "images": ["/projects/gallery/hg-1.png", "/projects/gallery/hg-1.png"],
+    "category": ["Mobile Development", "UI/UX Design"],
+    "stack": [
+      { "src": "/projects/icons/html.svg", "title": "HTML", "type": ["fe"] },
+      { "src": "/projects/icons/css.svg", "title": "CSS", "type": ["fe"] },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript", "type": ["fe"] },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++", "type": ["fe"] }
+    ],
+    "isFeatured": false,
+    "isShow": true,
+    "isShowInDashbard": true
+  }
+]
