@@ -1,12 +1,13 @@
 'use client';
 
 import { getSkills } from '@/fetch/data';
-import { ISkill } from '@/services/data/types';
+import { Skill } from '@/payload/payload-types';
 import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import filterSkill from '@/common/helpers/filterSkill';
+import { ApiResponse } from '@/common/types/api-types';
 
 import { RootState } from '@/context/filter/store';
 
@@ -14,18 +15,16 @@ import SkillCard from './SkillCard';
 
 function SkillList() {
   const filterObj = useSelector((state: RootState) => state.filter);
-  const { data } = useQuery({
+  const { data } = useQuery<ApiResponse<Skill>>({
     queryKey: ['skills'],
     queryFn: getSkills
   });
-  const [filteredSkills, setFilteredSkills] = useState<ISkill[]>(
-    data?.filter((skill: ISkill) => skill.isShow) as ISkill[]
-  );
+  const [filteredSkills, setFilteredSkills] = useState<Skill[]>(data?.docs?.filter(skill => skill.show) as Skill[]);
   useEffect(() => {
-    setFilteredSkills(data?.filter((skill: ISkill) => skill.isShow) as ISkill[]);
+    setFilteredSkills(data?.docs?.filter((skill: Skill) => skill.show) as Skill[]);
   }, [data]);
   useEffect(() => {
-    setFilteredSkills(filterSkill(data as ISkill[], filterObj));
+    setFilteredSkills(filterSkill(data?.docs as Skill[], filterObj));
   }, [filterObj]);
 
   return (

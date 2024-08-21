@@ -3,6 +3,7 @@
 import Link from 'next/link';
 
 import { getSkills } from '@/fetch/data';
+import { Skill } from '@/payload/payload-types';
 import { ISkill } from '@/services/data/types';
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
@@ -10,12 +11,13 @@ import { HiCode } from 'react-icons/hi';
 
 import SectionHeading from '@/common/components/elements/SectionHeading';
 import SectionSubHeading from '@/common/components/elements/SectionSubHeading';
+import { ApiResponse } from '@/common/types/api-types';
 
 // import SkillCard from './SkillCard';
 import SkillCard from './SkillCard';
 
 export default function Skills() {
-  const { data, error, isLoading } = useQuery({
+  const { data, error, isLoading } = useQuery<ApiResponse<Skill>>({
     queryKey: ['skills'],
     queryFn: getSkills
   });
@@ -34,12 +36,12 @@ export default function Skills() {
         </SectionSubHeading>
       </div>
       <div className="flex flex-wrap gap-6">
-        <SkillList skills={data?.filter((skill: ISkill) => skill.isShowInDashboard) as ISkill[]} />
+        <SkillList skills={data?.docs?.filter(skill => skill.showInDashboard) as Skill[]} />
       </div>
     </section>
   );
 }
 
-const SkillList = ({ skills }: { skills: ISkill[] }) => {
+const SkillList = ({ skills }: { skills: Skill[] }) => {
   return skills?.map((skill, index) => <SkillCard key={index} {...skill} />);
 };

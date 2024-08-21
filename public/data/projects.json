@@ -3,48 +3,76 @@
     "title": "Website Redesign",
     "description": "A complete redesign of a corporate website to enhance user experience and improve SEO.",
     "slug": "website-redesign",
-    "images": ["/projects/gallery/hg-1.png", "/projects/gallery/hg-1.png"],
-    "category": ["Web Development", "UI/UX Design"],
+    "body": "",
+    "demo": [],
+    "sourcecode": [],
+    "gallery": [{ "image": "/projects/gallery/hg-1.png" }],
+    "category": [{ "title": "Web Development" }, { "title": "UI/UX Design" }],
     "stack": [
-      { "src": "/projects/icons/html.svg", "title": "HTML", "type": ["fe"] },
-      { "src": "/projects/icons/css.svg", "title": "CSS", "type": ["fe"] },
-      { "src": "/projects/icons/javascript.svg", "title": "JavaScript", "type": ["fe"] },
-      { "src": "/projects/icons/Cpp.svg", "title": "C++", "type": ["fe"] }
+      { "src": "/projects/icons/html.svg", "title": "HTML" },
+      { "src": "/projects/icons/css.svg", "title": "CSS" },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript" },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++" }
     ],
-    "isFeatured": true,
-    "isShow": true,
-    "isShowInDashbard": true
+    "featured": true,
+    "show": true,
+    "showInDashbard": true
   },
   {
-    "title": "E-commerce Platform",
-    "description": "Development of a full-fledged e-commerce platform with payment gateway integration.",
-    "slug": "ecommerce-platform",
-    "images": ["/projects/gallery/hg-1.png", "/projects/gallery/hg-1.png"],
-    "category": ["Web Development", "Backend Development"],
+    "title": "Website Redesign3",
+    "description": "A complete redesign of a corporate website to enhance user experience and improve SEO.",
+    "slug": "website-redesign",
+    "body": "",
+    "demo": [],
+    "sourcecode": [],
+    "gallery": [{ "image": "/projects/gallery/hg-1.png" }],
+    "category": [{ "title": "Web Development" }, { "title": "UI/UX Design" }],
     "stack": [
-      { "src": "/projects/icons/html.svg", "title": "HTML", "type": ["fe"] },
-      { "src": "/projects/icons/css.svg", "title": "CSS", "type": ["fe"] },
-      { "src": "/projects/icons/javascript.svg", "title": "JavaScript", "type": ["fe"] },
-      { "src": "/projects/icons/Cpp.svg", "title": "C++", "type": ["fe"] }
+      { "src": "/projects/icons/html.svg", "title": "HTML" },
+      { "src": "/projects/icons/css.svg", "title": "CSS" },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript" },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++" }
     ],
-    "isFeatured": true,
-    "isShow": true,
-    "isShowInDashbard": false
+    "featured": true,
+    "show": true,
+    "showInDashbard": true
   },
   {
-    "title": "Mobile App Development",
-    "description": "Creation of a cross-platform mobile app for managing tasks and productivity.",
-    "slug": "mobile-app-development",
-    "images": ["/projects/gallery/hg-1.png", "/projects/gallery/hg-1.png"],
-    "category": ["Mobile Development", "UI/UX Design"],
+    "title": "Website Redesign2",
+    "description": "A complete redesign of a corporate website to enhance user experience and improve SEO.",
+    "slug": "website-redesign",
+    "body": "",
+    "demo": [],
+    "sourcecode": [],
+    "gallery": [{ "image": "/projects/gallery/hg-1.png" }],
+    "category": [{ "title": "Web Development" }, { "title": "UI/UX Design" }],
     "stack": [
-      { "src": "/projects/icons/html.svg", "title": "HTML", "type": ["fe"] },
-      { "src": "/projects/icons/css.svg", "title": "CSS", "type": ["fe"] },
-      { "src": "/projects/icons/javascript.svg", "title": "JavaScript", "type": ["fe"] },
-      { "src": "/projects/icons/Cpp.svg", "title": "C++", "type": ["fe"] }
+      { "src": "/projects/icons/html.svg", "title": "HTML" },
+      { "src": "/projects/icons/css.svg", "title": "CSS" },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript" },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++" }
     ],
-    "isFeatured": false,
-    "isShow": true,
-    "isShowInDashbard": true
+    "featured": true,
+    "show": true,
+    "showInDashbard": true
+  },
+  {
+    "title": "Website Redesign4",
+    "description": "A complete redesign of a corporate website to enhance user experience and improve SEO.",
+    "slug": "website-redesign",
+    "body": "",
+    "demo": [],
+    "sourcecode": [],
+    "gallery": [{ "image": "/projects/gallery/hg-1.png" }],
+    "category": [{ "title": "Web Development" }, { "title": "UI/UX Design" }],
+    "stack": [
+      { "src": "/projects/icons/html.svg", "title": "HTML" },
+      { "src": "/projects/icons/css.svg", "title": "CSS" },
+      { "src": "/projects/icons/javascript.svg", "title": "JavaScript" },
+      { "src": "/projects/icons/Cpp.svg", "title": "C++" }
+    ],
+    "featured": true,
+    "show": true,
+    "showInDashbard": true
   }
 ]

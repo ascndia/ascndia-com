@@ -1,21 +1,23 @@
 'use client';
 
 import { getProjects } from '@/fetch/data';
-import { IProject } from '@/services/data/types';
+import { Project } from '@/payload/payload-types';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
+import { ApiResponse } from '@/common/types/api-types';
+
 import ProjectCard from './ProjectCard';
 
 function ProjectList() {
-  const { data } = useQuery({
+  const { data } = useQuery<ApiResponse<Project>>({
     queryKey: ['projects'],
     queryFn: getProjects
   });
-  const [filtered, setFiltered] = useState<IProject[]>(data as IProject[]);
+  const [filtered, setFiltered] = useState<Project[]>(data?.docs as Project[]);
   useEffect(() => {
-    setFiltered(data?.filter((service: IProject) => service.isShow) as IProject[]);
+    setFiltered(data?.docs?.filter((service: Project) => service.show) as Project[]);
   }, [data]);
 
   return (

@@ -1,20 +1,23 @@
-import React from 'react';
+'use client';
+
+import { Skill } from '@/payload/payload-types';
+import React, { useEffect } from 'react';
 
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 
-export default function About() {
+export default async function About() {
   return (
     <>
       <Container data-aos="fade-up">
         <PageHeading title="About" description="Get to know more about me" />
         <div className="space-y-6 text-[17px] text-neutral-700 dark:text-neutral-300">
           <p>
-            Hi! I am <b className="dark:text-neutral-100">Abdurrahman Izzuddin A.F</b>, a seasoned software engineer
-            with a deep passion for creating elegant and efficient solutions through code. With a strong foundation in
-            JavaScript and TypeScript, along with a comprehensive understanding of various frontend libraries and
-            frameworks, I heve been navigating the ever-evolving landscape of web development with enthusiasm and
-            dedication. Currently, reside in Surabaya, Indonesia 🇮🇩.
+            Hi! I am <b className="dark:text-neutral-100">Abdurrahman Izzuddin Al Faruq</b>, a seasoned software
+            engineer with a deep passion for creating elegant and efficient solutions through code. With a strong
+            foundation in JavaScript and TypeScript, along with a comprehensive understanding of various frontend
+            libraries and frameworks, I heve been navigating the ever-evolving landscape of web development with
+            enthusiasm and dedication. Currently, reside in Surabaya, Indonesia 🇮🇩.
           </p>
           <p>
             As a fast learner and adaptive thinker, I thrive in dynamic environments where innovation is the driving

@@ -1,19 +1,22 @@
 import { getServices } from '@/fetch/data';
+import { Service } from '@/payload/payload-types';
 import { IService } from '@/services/data/types';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
+import { ApiResponse } from '@/common/types/api-types';
+
 import ServiceCard from './ServiceCard';
 
 function ServiceList() {
-  const { data } = useQuery({
-    queryKey: ['services'],
+  const { data } = useQuery<ApiResponse<Service>>({
+    queryKey: ['skills'],
     queryFn: getServices
   });
-  const [filtered, setFiltered] = useState<IService[]>(data as IService[]);
+  const [filtered, setFiltered] = useState<Service[]>(data?.docs as Service[]);
   useEffect(() => {
-    setFiltered(data?.filter((service: IService) => service.isShow) as IService[]);
+    setFiltered(data?.docs?.filter((service: Service) => service.show) as Service[]);
   }, [data]);
 
   return (

@@ -1,46 +1,46 @@
-import { filterType } from "@/common/types/filter"
+import { filterType } from '@/common/types/filter';
 
-const filters:filterType[] = [    
-    {
-        title:'Front-End',
-        category:'fe'
-    },
-    {
-        title:'Back-End',
-        category:'be'
-    },
-    {
-        title:'Fullstack',
-        category:'fs'
-    },
-    {
-        title:'Databases',
-        category:'db'
-    },
-    {
-        title:'Languages',
-        category:'lang'
-    },
-    {
-        title:'Frameworks',
-        category:'fw'
-    },
-    {
-        title:'Libraries',
-        category:'lib'
-    },
-    {
-        title:'Misc',
-        category:'misc'
-    },
-    {
-        title:'Services',
-        category:'sv'
-    },
-    {
-        title:'Tools',
-        category:'tool'
-    },
-]
+const filters: filterType[] = [
+  {
+    title: 'Front-End',
+    category: { title: 'fe' }
+  },
+  {
+    title: 'Back-End',
+    category: { title: 'be' }
+  },
+  {
+    title: 'Fullstack',
+    category: { title: 'fs' }
+  },
+  {
+    title: 'Databases',
+    category: { title: 'db' }
+  },
+  {
+    title: 'Languages',
+    category: { title: 'lang' }
+  },
+  {
+    title: 'Frameworks',
+    category: { title: 'fw' }
+  },
+  {
+    title: 'Libraries',
+    category: { title: 'lib' }
+  },
+  {
+    title: 'Misc',
+    category: { title: 'misc' }
+  },
+  {
+    title: 'Services',
+    category: { title: 'sv' }
+  },
+  {
+    title: 'Tools',
+    category: { title: 'tool' }
+  }
+];
 
-export default filters
+export default filters;

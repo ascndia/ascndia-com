@@ -14,7 +14,7 @@ interface TooltipProps {
   title: string;
   info: string;
   icon: string;
-  category: string[];
+  category: { title: string }[];
   usage: usage;
   mastery: mastery;
   children: ReactNode;
@@ -57,7 +57,7 @@ const Tooltip = ({ title, info, icon, category, mastery, usage, children }: Tool
             <div className="flex flex-wrap gap-1 items-center justify-start max-w-[240px]">
               {category.map((cat, index) => (
                 <p className="px-[5px] py-[2px] text-center rounded-sm bg-neutral-200 dark:bg-neutral-400 text-neutral-500 dark:text-neutral-700">
-                  {categoryToTitle(cat)}
+                  {categoryToTitle(cat.title)}
                 </p>
               ))}
             </div>

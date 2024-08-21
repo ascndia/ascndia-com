@@ -1,0 +1,7 @@
+{
+  "watch": ["server.ts"],
+  "exec": "ts-node --project tsconfig.server.json server.ts -- -I",
+  "ext": "js ts jsx tsx env",
+  "ignore": ["node_modules", ".next", "dist", "public", "client/**/*", "build/**/*"],
+  "stdin": false
+}
