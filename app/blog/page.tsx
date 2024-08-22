@@ -6,7 +6,7 @@ import BlogList from './_module/components/BlogList';
 export default async function Blogs() {
   return (
     <Container data-aos="fade-up">
-      <PageHeading title="About" description="Get to know more about me" />
+      <PageHeading title="Blog" description="Welcome to my blog, where I share my thoughts and insights." />
       <BlogList />
     </Container>
   );
