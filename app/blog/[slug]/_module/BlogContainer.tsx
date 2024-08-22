@@ -23,8 +23,8 @@ export default function BlogContainer({ postData }: { postData: BlogPost }) {
       <div className="flex gap-x-2 mt-2 text-neutral-700 duration-200 dark:text-neutral-300">
         <div>Published on : {postData.date}</div>
       </div>
-      <div className="img-container max-h-96 overflow-hidden">
-        <Image className="py-2" src={postData.image} alt={postData.title} />
+      <div className="img-container  relative lg:-h-[420px] h-[260px] sm:h-[320px] md:h-[400px] overflow-hidden">
+        <Image className="py-2" layout="fill" objectFit="cover" src={postData.image} alt={postData.title} />
       </div>
 
       <Breakline className="my-8" />

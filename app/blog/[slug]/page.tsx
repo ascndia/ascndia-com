@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Container from '@/common/components/elements/Container';
 import { getBlogs } from '@/common/libs/fetch/data';
 
 import BlogPostPage from './_module';
@@ -10,7 +11,11 @@ interface BlogPostPageProps {
   };
 }
 export default function page({ params }: BlogPostPageProps) {
-  return <BlogPostPage params={params} />;
+  return (
+    <Container data-aos="fade-up">
+      <BlogPostPage params={params} />
+    </Container>
+  );
 }
 
 export async function generateStaticParams() {
