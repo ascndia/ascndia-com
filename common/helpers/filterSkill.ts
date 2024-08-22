@@ -1,4 +1,4 @@
-import { ISkill } from '@/services/data/types';
+import { ISkill } from '@/common/types/data/types';
 
 import { initialFilterState } from '@/context/filter/filter';
 

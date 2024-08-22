@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { METADATA } from '@/common/constant/metadata';
 
-import Skills from '@/modules/skill';
+import Skills from '@/app/skill/_module';
 import skillStore from '@/context/filter/store';
 import Container from '@/common/components/elements/Container';
 

@@ -16,14 +16,10 @@ import {
   BsLinkedin as LinkedinIcon,
   BsTiktok as TiktokIcon,
   BsTwitter as TwitterIcon,
-  BsYoutube as YoutubeIcon,
+  BsYoutube as YoutubeIcon
 } from 'react-icons/bs';
-import {
-  FiInbox as SkillIcon
-} from 'react-icons/fi'
-import 
-{ LuWorkflow,
-  LuHeartHandshake as ServiceIcon } from 'react-icons/lu';
+import { FiInbox as SkillIcon } from 'react-icons/fi';
+import { LuWorkflow, LuHeartHandshake as ServiceIcon } from 'react-icons/lu';
 
 import { MenuItemProps } from '../types/menu';
 
@@ -49,15 +45,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
   {
     title: 'Services',
     href: '/service',
-    icon: <ServiceIcon size={iconSize}/>,
+    icon: <ServiceIcon size={iconSize} />,
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Services'
-  }, 
+  },
   {
     title: 'Skill',
     href: '/skill',
-    icon: <SkillIcon/>,
+    icon: <SkillIcon />,
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Skill'
@@ -66,7 +62,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     title: 'Blog',
     href: '/blog',
     icon: <BlogIcon size={iconSize} />,
-    isShow: false,
+    isShow: true,
     isExternal: false,
     eventName: 'Pages: Blog'
   },
@@ -101,15 +97,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isShow: false,
     isExternal: false,
     eventName: 'Pages: Roadmap'
-  },
-  {
-    title: 'Dashboard',
-    href: '/dashboard',
-    icon: <DashboardIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Dashboard'
   }
+  // {
+  //   title: 'Dashboard',
+  //   href: '/dashboard',
+  //   icon: <DashboardIcon size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: Dashboard'
+  // }
 ];
 
 export const SOCIAL_MEDIA: MenuItemProps[] = [

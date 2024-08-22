@@ -9,7 +9,7 @@ import Profile from './Profile';
 export default function Sidebar() {
   const isMobile = useIsMobile();
   return (
-    <div className="sticky transition-all duration-300 top-0 z-10 flex flex-col lg:py-8">
+    <div className=" transition-all sticky duration-300 top-0 z-999 flex flex-col lg:py-8">
       <Profile />
       {!isMobile && (
         <>

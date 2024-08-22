@@ -1,7 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Link from 'next/link';
+
+import { motion } from 'framer-motion';
 
 export default function Status() {
   return (
@@ -11,7 +12,7 @@ export default function Status() {
         animate={{ scale: [1, 1.2, 1] }}
         transition={{ duration: 0.5, repeat: Infinity }}
       />
-      <span className="text-sm text-neutral-600 dark:text-neutral-400">credit to <Link href={'https://www.codebayu.com'}>codebayu</Link></span>
+      <span className="text-sm text-neutral-600 dark:text-neutral-400">open to work</span>
     </div>
   );
 }

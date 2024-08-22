@@ -1,10 +1,11 @@
-import Container from '@/common/components/elements/Container'
-import Services from '@/modules/service'
-import React from 'react'
-
 import { Metadata } from 'next';
+
+import React from 'react';
+
+import Container from '@/common/components/elements/Container';
 import { METADATA } from '@/common/constant/metadata';
 
+import Services from './_module';
 
 export const metadata: Metadata = {
   title: `${METADATA.creator} | Services`,
@@ -13,13 +14,12 @@ export const metadata: Metadata = {
   }
 };
 
-
 function page() {
   return (
-    <Container data-aos='fade-up'>
-      <Services/>
+    <Container data-aos="fade-up">
+      <Services />
     </Container>
-  )
+  );
 }
 
-export default page
+export default page;

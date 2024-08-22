@@ -39,7 +39,7 @@ export default function MenuItem({ title, href, icon, onClick, className = '', c
   };
 
   const elementProps = {
-    className: `${activeClasses} ${className}`,
+    className: `${activeClasses} ${className}  `,
     onClick: handleClick,
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave
