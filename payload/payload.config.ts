@@ -23,11 +23,11 @@ export default buildConfig({
   },
   admin: {
     user: 'users',
-    bundler: webpackBundler(),
-    autoLogin: {
-      email: 'fixgmc@gmail.com',
-      password: 'XSARACENZ'
-    }
+    bundler: webpackBundler()
+    // autoLogin: {
+    //   email: 'fixgmc@gmail.com',
+    //   password: 'XSARACENZ'
+    // }
   },
   editor: slateEditor({}),
   db: mongooseAdapter({

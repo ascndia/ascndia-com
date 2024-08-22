@@ -6,6 +6,7 @@ import { getSkills } from '@/fetch/data';
 import { Skill } from '@/payload/payload-types';
 import { ISkill } from '@/services/data/types';
 import { useQuery } from '@tanstack/react-query';
+import payload from 'payload';
 import { useState } from 'react';
 import { HiCode } from 'react-icons/hi';
 
@@ -16,12 +17,15 @@ import { ApiResponse } from '@/common/types/api-types';
 // import SkillCard from './SkillCard';
 import SkillCard from './SkillCard';
 
-export default function Skills() {
-  const { data, error, isLoading } = useQuery<ApiResponse<Skill>>({
-    queryKey: ['skills'],
-    queryFn: getSkills
+export default async function Skills() {
+  // const { data, error, isLoading } = useQuery<ApiResponse<Skill>>({
+  //   queryKey: ['skills'],
+  //   queryFn: getSkills
+  // });
+  const data = await payload.find({
+    collection: 'skills',
+    limit: 0
   });
-
   return (
     <section className="space-y-6">
       <div className="space-y-2">

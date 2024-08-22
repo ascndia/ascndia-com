@@ -1,8 +1,8 @@
-'use client';
-
+// 'use client';
 import { getSkills } from '@/fetch/data';
 import { Skill } from '@/payload/payload-types';
 import { useQuery } from '@tanstack/react-query';
+import payload from 'payload';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -13,11 +13,15 @@ import { RootState } from '@/context/filter/store';
 
 import SkillCard from './SkillCard';
 
-function SkillList() {
+async function SkillList() {
   const filterObj = useSelector((state: RootState) => state.filter);
-  const { data } = useQuery<ApiResponse<Skill>>({
-    queryKey: ['skills'],
-    queryFn: getSkills
+  // const { data } = useQuery<ApiResponse<Skill>>({
+  //   queryKey: ['skills'],
+  //   queryFn: getSkills
+  // });
+  const data = await payload.find({
+    collection: 'skills',
+    limit: 0
   });
   const [filteredSkills, setFilteredSkills] = useState<Skill[]>(data?.docs?.filter(skill => skill.show) as Skill[]);
   useEffect(() => {

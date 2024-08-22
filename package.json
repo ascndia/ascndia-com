@@ -10,9 +10,10 @@
     "build:server": "tsc --project tsconfig.server.json",
     "build:next": "next build",
     "build": "yarn build:payload && yarn build:server && yarn build:next",
-    "start": "next start",
+    "start": "node dist/server.js",
     "lint": "next lint",
-    "format": "prettier --write \"./**/*.{ts,tsx,json}\""
+    "format": "prettier --write \"./**/*.{ts,tsx,json}\"",
+    "serve": "cross-env NODE_ENV=production PAYLOAD_CONFIG_PATH=dist/payload/payload.config.js node dist/server.js"
   },
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
