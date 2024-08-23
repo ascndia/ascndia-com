@@ -71,6 +71,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       images: [
         {
           url: blogData.image,
+          secureUrl: blogData.image,
           alt: blogData.title
         }
       ]
