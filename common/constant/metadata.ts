@@ -1,16 +1,20 @@
 export const METADATA = {
-  creator: 'Abdurrahman izzuddin',
-  description: 'Personal website, portfolio, blog, software engineer roadmap, programming tips of Code Bayu',
-  keyword: 'ascndia, @ascndia, abdurrahman izzuddin, abdurrahman izzuddin al faruq, aia faruq, faruq',
+  creator: 'Abdurrahman',
+  description: 'Personal Website of Ascndia',
+  image: 'https://raw.githubusercontent.com/ascndia/data/master/misc/pp.jpeg',
+  keyword: 'ascndia, @ascndia, abdurrahman izzuddin, abdurrahman izzuddin al faruq, izzuddin al faruq, faruq, izzuddin',
+  siteName: 'https://ascndia.com',
   authors: {
-    name: 'Bayu Setiawan',
-    url: process.env.DOMAIN
+    name: 'Ascndia',
+    url: process.env.NEXT_PUBLIC_BASE_URL
   },
   openGraph: {
-    url: process.env.DOMAIN,
-    siteName: 'Code Bayu',
+    title: 'Ascndia',
+    description: '',
+    url: process.env.NEXT_PUBLIC_BASE_URL,
+    siteName: 'Ascndia',
     locale: 'id-ID'
   },
-  exTitle: '| Code Bayu',
-  profile: '/pp.jpeg'
+  exTitle: '| Ascndia',
+  profile: 'https://raw.githubusercontent.com/ascndia/data/master/misc/pp.jpeg'
 };

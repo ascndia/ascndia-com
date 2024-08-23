@@ -7,7 +7,7 @@ export const Projects = () => {
     <>
       <PageHeading
         title="Projects"
-        description="Delivering Expert Solutions with Care and Creative Ingenuity for Exceptional Digital Experiences."
+        description="Showcasing my passion for technology, design, and problem-solving through code."
       />
       <ProjectList />
     </>

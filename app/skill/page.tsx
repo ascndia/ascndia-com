@@ -1,22 +1,30 @@
 import { Metadata } from 'next';
-import { METADATA } from '@/common/constant/metadata';
 
 import Skills from '@/app/skill/_module';
-import skillStore from '@/context/filter/store';
+
 import Container from '@/common/components/elements/Container';
+import { METADATA } from '@/common/constant/metadata';
 
 export const metadata: Metadata = {
-  title: `${METADATA.creator} | My Skills`,
+  title: `${METADATA.creator} Skills`,
+  description: 'Collections of skills i have mastered',
   alternates: {
-    canonical: process.env.DOMAIN
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://ascndia.com'}`
+  },
+  openGraph: {
+    title: `My Skills`,
+    description: 'Collections of skills i have mastered',
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://ascndia.com'}/skill`,
+    siteName: METADATA.siteName,
+    images: METADATA.image
   }
 };
 
 export default async function HomePage() {
   return (
     <>
-      <Container data-aos='fade-up'>
-        <Skills/>
+      <Container data-aos="fade-up">
+        <Skills />
       </Container>
     </>
   );

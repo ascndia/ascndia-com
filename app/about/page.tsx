@@ -1,7 +1,24 @@
+import { Metadata } from 'next';
+
 import React from 'react';
 
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
+import { METADATA } from '@/common/constant/metadata';
+
+export const metadata: Metadata = {
+  title: `${METADATA.creator} About me`,
+  alternates: {
+    canonical: process.env.DOMAIN
+  },
+  openGraph: {
+    title: `${METADATA.creator} About me`,
+    description: 'Get to know more about me',
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || 'https://ascndia.com'}/about`,
+    siteName: METADATA.creator,
+    images: METADATA.image
+  }
+};
 
 export default function About() {
   return (
