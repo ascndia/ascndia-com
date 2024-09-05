@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: process.env.DOMAIN
   },
   openGraph: {
-    title: `${METADATA.creator} Personal Website`,
+    title: `Abdurrahman Izzuddin Al Faruq`,
     description: METADATA.description,
     url: process.env.NEXT_PUBLIC_BASE_URL,
     siteName: METADATA.creator,
